@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/html/css/login.css">
+	<title>User Login</title>
+</head>
+
+<body>
+
+	<div class="form-structor">
+		<div class="signup">
+			<h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+			<div class="form-holder">
+
+				<input type="text" class="input" id="name" name="name" placeholder="Name" required>
+
+				<input id="email" type="email" class="input" name="email" placeholder="Email" />
+
+				<input id="password" type="password" class="input" name="password" placeholder="Password" />
+
+				<input id="confirmPass" type="password" class="input" name="confirmPass" placeholder="ConfirmPassword" />
+
+			</div>
+			<button class="submit-btn" onclick="signUp()">Sign up</button>
+
+		</div>
+
+		<div class="login slide-up">
+
+			<div class="center">
+
+				<h2 class="form-title" id="login"><span>or</span>Log in</h2>
+				<div class="form-holder">
+
+					<input type="email" name="email" class="input" placeholder="Email" id="loginEmail" />
+					<input type="password" name="password" class="input" placeholder="Password" id="loginPassword" />
+
+				</div>
+
+				<button class="submit-btn" onclick="login()">Log in</button>
+
+			</div>
+
+		</div>
+		<div style="text-align: center; " id="notification" class="centered-div"></div>
+
+
+	</div>
+
+
+
+
+	<script src="/html/js/login.js"></script>
+
+</body>
+
+</html>

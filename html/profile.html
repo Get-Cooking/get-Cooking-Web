@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="html/css/profile.css">
+	<title>User Profile</title>
+</head>
+
+<body>
+
+	<div id="profile">
+		<h2>User Profile</h2>
+		<div id="profileData"></div>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			const userProfile = JSON.parse(localStorage.getItem('userProfile'));
+
+			if (userProfile) {
+
+				displayUserProfile(userProfile);
+			} else {
+
+				document.getElementById('profileData').innerText = 'Данные пользователя отсутствуют.';
+			}
+
+
+		});
+
+		function displayUserProfile(userProfile) {
+			const profileDataElement = document.getElementById('profileData');
+
+
+			profileDataElement.innerHTML = `
+                <h1><strong>Имя:</strong> ${userProfile.name}</h1>
+                <h1><strong>Email:</strong> ${userProfile.email}</h1>
+                <h1><strong>Пароль:</strong> ${userProfile.password}</h1>
+            `;
+		}
+	</script>
+
+</body>
+
+</html>
