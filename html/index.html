@@ -5,20 +5,71 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>home</title>
-	<link rel="stylesheet" href="/html/css/imdex.css">
+	<link rel="stylesheet" href="/css/imdex.css">
+	<link rel="stylesheet" href="/css/uikit.css">
+	<link rel="stylesheet" href="/css/uikit-rtl.css">
+	<link rel="stylesheet" href="/css/uikit-rtl.min.css">
+	<link rel="stylesheet" href="/css/uikit.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/css/uikit.min.css">
 
 
 
 </head>
 
+
+
 <body>
 
-	<nav class="navbar">
-		<div class="navbar-logo">Logo</div>
-		<div class="navbar-search">
-			<input type="text" placeholder="Search">
+	<nav class="uk-navbar-container">
+
+		<div class="uk-container">
+			<div uk-navbar>
+
+				<div class="uk-navbar-left">
+
+					<a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li class="uk-active"><a href="#">Active</a></li>
+							<li><a href="#">Item</a></li>
+							<li><a href="#">Item</a></li>
+						</ul>
+					</div>
+					<a class="uk-navbar-item uk-logo" href="/html/index.html" aria-label="Back to Home">
+						<img style="height: 45px;" src="/img/cooking.png" alt="Логотип">
+
+					</a>
+
+
+					<ul class="uk-navbar-nav">
+						<li class="uk-active"><a href="#">Active</a></li>
+						<li>
+							<a href="#">Parent</a>
+
+						</li>
+					</ul>
+
+
+					<div class="uk-navbar-center">
+						<form action="javascript:void(0)">
+							<input class="uk-input uk-form-width-medium" type="text" placeholder="Search" aria-label="Search">
+							<button class="uk-button uk-button-default">Search</button>
+						</form>
+					</div>
+
+				</div>
+				<div class="uk-navbar-right">
+
+					<ul class="uk-navbar-nav">
+						<li>
+							<a href="profile.html">Profile</a>
+
+						</li>
+					</ul>
+				</div>
+
+			</div>
 		</div>
-		<div class="navbar-profile">Profile</div>
 	</nav>
 
 	<div class="card-container">
@@ -38,11 +89,10 @@
 		<div class="card-shadow"></div>
 	</div>
 
-
 	<div class="card-container">
 		<div class="card u-clearfix">
 			<div class="card-body">
-				<span class="card-number card-circle subtle">02</span>
+				<span class="card-number card-circle subtle">01</span>
 				<span class="card-author subtle">John Smith</span>
 				<h2 class="card-title">New Brunch Recipe</h2>
 				<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for
@@ -56,40 +106,13 @@
 		<div class="card-shadow"></div>
 	</div>
 
-	<div class="card-container">
-		<div class="card u-clearfix">
-			<div class="card-body">
-				<span class="card-number card-circle subtle">02</span>
-				<span class="card-author subtle">John Smith</span>
-				<h2 class="card-title">New Brunch Recipe</h2>
-				<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for
-					you
-					all.</span>
-				<div class="card-read">Read</div>
-				<span class="card-tag card-circle subtle">C</span>
-			</div>
-			<img src="https://s15.postimg.cc/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-		</div>
-		<div class="card-shadow"></div>
-	</div>
-	<div class="card-container">
-		<div class="card u-clearfix">
-			<div class="card-body">
-				<span class="card-number card-circle subtle">02</span>
-				<span class="card-author subtle">John Smith</span>
-				<h2 class="card-title">New Brunch Recipe</h2>
-				<span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for
-					you
-					all.</span>
-				<div class="card-read">Read</div>
-				<span class="card-tag card-circle subtle">C</span>
-			</div>
-			<img src="https://s15.postimg.cc/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-		</div>
-		<div class="card-shadow"></div>
-	</div>
 
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/js/uikit-icons.min.js"></script>
+
+
 
 </html>
